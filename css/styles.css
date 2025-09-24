@@ -448,3 +448,55 @@ section h2::after {
   font-size: 0.95rem;
   color: #444;
 }
+/* Estilos para Avisos Legales */
+.legal-section {
+  background: #ffffff;
+  border: 1px solid #d6e9f8;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin: 20px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 86, 163, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.legal-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 86, 163, 0.15);
+}
+
+.legal-section h2 {
+  font-size: 1.8rem;
+  color: #0056a3;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.legal-section p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.legal-section a {
+  color: #0077c8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.legal-section a:hover {
+  text-decoration: underline;
+}
+
+header.header {
+  background: linear-gradient(90deg, #6ec1e4, #ffffff);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.95rem;
+}

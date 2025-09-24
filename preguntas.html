@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes - Inmigración Argentina</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .faq-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .faq h2 {
+      text-align: center;
+      color: #0056a3;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .accordion {
+      background: #ffffff;
+      border: 1px solid #d6e9f8;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .accordion:hover {
+      background: #f0f8ff;
+    }
+
+    .accordion.active {
+      background: #e6f3fd;
+    }
+
+    .accordion::after {
+      content: '\f078';
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      float: right;
+      transition: transform 0.3s;
+    }
+
+    .accordion.active::after {
+      transform: rotate(180deg);
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 10px;
+    }
+
+    .panel p {
+      padding: 10px 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Inmigración Argentina</h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="requisitos.html">Requisitos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="preguntas.html" class="active">Preguntas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="faq-container">
+      <h2>Preguntas Frecuentes</h2>
+    </section>
+    <section>
+      <div class="accordion">¿Cuáles son los requisitos para obtener la residencia temporal?</div>
+      <div class="panel">
+        <p>Para obtener la residencia temporal, generalmente necesitas pasaporte vigente, certificado de antecedentes penales, y prueba de ingresos o trabajo. Revisa la sección de Requisitos para más detalles.</p>
+      </div>
+
+      <div class="accordion">¿Cuánto tiempo demora el trámite de residencia permanente?</div>
+      <div class="panel">
+        <p>El tiempo varía según la documentación y el tipo de trámite, pero normalmente puede tardar entre 6 y 12 meses.</p>
+      </div>
+
+      <div class="accordion">¿Puedo realizar todos los trámites desde fuera de Argentina?</div>
+      <div class="panel">
+        <p>Algunos trámites requieren presencia física, otros se pueden iniciar desde el exterior. Recomendamos contactarnos para guiarte según tu caso.</p>
+      </div>
+
+      <div class="accordion">¿Ofrecen asesoría legal para trámites complejos?</div>
+      <div class="panel">
+        <p>Sí, nuestro equipo de abogados especializados en inmigración puede asesorarte en casos complejos o situaciones especiales.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Inmigración Argentina - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- MENU HAMBURGUESA -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+
+  <!-- Acordeón FAQ -->
+  <script>
+    const accordions = document.querySelectorAll('.accordion');
+    accordions.forEach(acc => {
+      acc.addEventListener('click', () => {
+        acc.classList.toggle('active');
+        const panel = acc.nextElementSibling;
+        if(panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

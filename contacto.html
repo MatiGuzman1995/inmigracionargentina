@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Inmigración Argentina</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("TU_PUBLIC_KEY"); // Reemplazá con tu Public Key de EmailJS
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Inmigración Argentina</h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="requisitos.html">Requisitos</a></li>
+         <li><a href="nosotros.html">Nosotros</a></li>
+           <li><a href="preguntas.html" >Preguntas</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Contacto</h2>
+    <p>Escribinos y te responderemos a la brevedad.</p>
+  </section>
+  <section>
+    <form id="contact-form">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20consultar%20sobre%20inmigración" 
+         target="_blank" class="btn-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Inmigración Argentina - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    // EmailJS - envío de formulario
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Reemplazá 'TU_SERVICE_ID' y 'TU_TEMPLATE_ID' con los de EmailJS
+      emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
+        .then(() => {
+          alert('Mensaje enviado con éxito!');
+          form.reset();
+        }, (err) => {
+          alert('Error al enviar mensaje: ' + JSON.stringify(err));
+        });
+    });
+  </script>
+</body>
+</html>

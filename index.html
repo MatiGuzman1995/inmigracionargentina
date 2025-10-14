@@ -8,132 +8,155 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Inmigración Argentina</h1>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
-    </div>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="servicios.html" >Servicios</a></li>
-        <li><a href="requisitos.html">Requisitos</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-           <li><a href="preguntas.html" >Preguntas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero hero-home">
-    <div class="container">
-      <h2>Bienvenidos a Inmigración Argentina</h2>
-      <p>Te ayudamos en cada paso de tu proceso migratorio con información clara y confiable.</p>
-      <div class="hero-buttons">
-        <a href="servicios.html" class="btn-hero">Ver Servicios</a>
-        <a href="requisitos.html" class="btn-hero btn-outline">Revisar Requisitos</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICIOS DESTACADOS -->
-  <section class="servicios destacados">
-    <div class="container">
-      <h2>Servicios Destacados</h2>
-      <div class="servicios">
-        <div class="card">
-          <i class="fa-solid fa-passport icono"></i>
-          <h3>Residencias</h3>
-          <p>Tramitamos residencias temporarias y permanentes de manera rápida y segura.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-scale-balanced icono"></i>
-          <h3>Asesoría Legal</h3>
-          <p>Orientación profesional en trámites migratorios y normativas argentinas.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-file-lines icono"></i>
-          <h3>Documentación</h3>
-          <p>Gestión de certificados, antecedentes, apostillas y traducciones oficiales.</p>
-        </div>
-      </div>
-  <div style="text-align:center; margin-top:20px;">
-  <a href="servicios.html" class="btn-ver-todos">Ver todos los servicios</a>
+<!-- BARRA SUPERIOR CON SELECTOR DE IDIOMA -->
+<div class="top-bar">
+  <div class="idioma-selector">
+    <i class="fa-solid fa-globe"></i>
+    <button onclick="cambiarIdioma('es')" title="Español">
+      <img src="flag/españa.png" alt="Español">
+    </button>
+    <button onclick="cambiarIdioma('en')" title="English">
+      <img src="flag/estadosunidos.png" alt="English">
+    </button>
+    <button onclick="cambiarIdioma('fr')" title="Français">
+      <img src="flag/francia.png" alt="Français">
+    </button>
+    <button onclick="cambiarIdioma('de')" title="Deutsch">
+      <img src="flag/alemania.png" alt="Deutsch">
+    </button>
+  </div>
 </div>
 
-    </div>
-  </section>
 
-  <!-- REQUISITOS RÁPIDOS -->
-  <section class="requisitos-rapidos">
-    <div class="container">
-      <h2>Requisitos Principales</h2>
-      <ul>
-        <li><i class="fa-solid fa-passport"></i> Pasaporte vigente</li>
-        <li><i class="fa-solid fa-file-shield"></i> Certificado de antecedentes penales</li>
-        <li><i class="fa-solid fa-file-circle-check"></i> Partida de nacimiento legalizada</li>
-        <li><i class="fa-solid fa-briefcase"></i> Comprobante de ingresos o trabajo</li>
-      </ul>
-    
-    </div>
-  </section>
 
-  <!-- TESTIMONIOS -->
-  <section class="testimonios">
-    <div class="container">
-      <h2>Testimonios</h2>
-      <div class="testimonios-cards">
-        <div class="card-testimonio">
-          <p>"Gracias a Inmigración Argentina pude tramitar mi residencia sin problemas. ¡Muy recomendable!"</p>
-          <h4>- María López</h4>
-        </div>
-        <div class="card-testimonio">
-          <p>"El equipo me ayudó con toda la documentación y el proceso fue más rápido de lo que esperaba."</p>
-          <h4>- Juan Pérez</h4>
-        </div>
+
+<!-- HEADER PRINCIPAL -->
+<header>
+  <div class="logo-container">
+    <img src="img/loguito.jpg" alt="Logo Inmigración Argentina" class="logo">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html" class="active" id="menu-inicio">Inicio</a></li>
+      <li><a href="servicios.html" id="menu-servicios">Servicios</a></li>
+      <li><a href="requisitos.html" id="menu-requisitos">Requisitos</a></li>
+      <li><a href="nosotros.html" id="menu-nosotros">Nosotros</a></li>
+      <li><a href="preguntas.html" id="menu-preguntas">Preguntas</a></li>
+      <li><a href="contacto.html" id="menu-contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero hero-home">
+  <div class="container">
+    <h2 id="hero-titulo">Bienvenido a Immigrate To Argentina</h2>
+    <p id="hero-texto">Te acompañamos en todo el proceso migratorio con orientación clara, humana y personalizada.
+    Residencias, ciudadanía y documentos, todo en un solo lugar.</p>
+    <div class="hero-buttons">
+      <a href="servicios.html" class="btn-hero" id="btn-servicios">Ver Servicios</a>
+      <a href="requisitos.html" class="btn-hero btn-outline" id="btn-requisitos">Revisar Requisitos</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUIÉNES SOMOS -->
+<section class="quienes-somos">
+  <div class="container">
+    <h2 id="quienes-somos-titulo">¿Quiénes Somos?</h2>
+    <p id="quienes-somos-texto">Somos un equipo de profesionales en migraciones, derecho y traducción pública que brinda soluciones reales a quienes desean radicarse en Argentina. Sabemos lo que implica un cambio de país: trámites, documentos, dudas y sueños. Por eso, nuestro compromiso es acompañarte paso a paso, desde tu solicitud hasta tu residencia definitiva.</p>
+    <p id="mision-texto">Misión: Hacer que tu proceso migratorio sea claro, ágil y seguro.</p>
+    <p id="vision-texto">Visión: Convertirnos en el puente más confiable entre vos y tu nueva vida en Argentina</p>
+  </div>
+</section>  
+
+<!-- SERVICIOS DESTACADOS -->
+<section class="servicios destacados">
+  <div class="container">
+    <h2 id="servicios-titulo">Servicios Destacados</h2>
+    <div class="servicios">
+      <div class="card">
+        <i class="fa-solid fa-passport icono"></i>
+        <h3 id="serv1-titulo">Residencias</h3>
+        <p id="serv1-texto">Gestionamos residencias temporarias o permanentes con acompañamiento personalizado en cada paso.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-scale-balanced icono"></i>
+        <h3 id="serv2-titulo">Asesoría Legal</h3>
+        <p id="serv2-texto">Contás con abogados especializados en migración argentina que te guiarán en todo el proceso.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-file-lines icono"></i>
+        <h3 id="serv3-titulo">Documentación</h3>
+        <p id="serv3-texto">Nos ocupamos de tu documentación: antecedentes, apostillas, certificados y traducciones oficiales.</p>
       </div>
     </div>
-  </section>
-
-  <!-- CONTACTO RÁPIDO -->
-  <section class="contacto-rapido">
-    <div class="container" style="text-align:center;">
-      <h2>Consultanos</h2>
-      <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20consultar%20sobre%20inmigración" 
-         target="_blank" class="btn-whatsapp">
-        <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
-      </a>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="servicios.html" class="btn-ver-todos" id="btn-ver-todos">Ver todos los servicios</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
- <footer>
-  <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+<!-- REQUISITOS RÁPIDOS -->
+<section class="requisitos-rapidos">
+  <div class="container">
+    <h2 id="req-titulo">Requisitos Principales</h2>
+    <p id="req-intro">Estos son algunos de los documentos más comunes que necesitarás para iniciar tu trámite migratorio en Argentina:</p>
+    <div class="req-list">
+      <div class="req-card"><i class="fa-solid fa-passport"></i><p id="req1">Pasaporte vigente</p></div>
+      <div class="req-card"><i class="fa-solid fa-file-shield"></i><p id="req2">Certificado de antecedentes penales de tu país de origen (legalizado o apostillado)</p></div>
+      <div class="req-card"><i class="fa-solid fa-file-circle-check"></i><p id="req3">Partida de nacimiento legalizada</p></div>
+      <div class="req-card"><i class="fa-solid fa-briefcase"></i><p id="req4">Comprobante de ingresos o trabajo</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO RÁPIDO -->
+  <div style="margin-top:20px; text-align:center;">
+    <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" 
+       target="_blank" class="btn-whatsapp">
+      <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+    </a>
+  </div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contacto</h3>
+      <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +54 9 3518632045</p>
+      <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
+    </div>
+    <div class="footer-redes">
+      <h3>Seguinos</h3>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+       <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Inmigración Argentina | Asesoría migratoria integral para extranjeros.  
+       <a href="avisos.html">Avisos Legales</a>
+    </p>
+  </div>
 </footer>
 
+<script src="js/script.js"></script>
 
-  <!-- MENU HAMBURGUESA -->
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
-    });
-  </script>
-
-  <!-- ANIMACIONES DE SCROLL -->
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    document.querySelectorAll('.card, .card-testimonio, .requisitos-rapidos li').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>

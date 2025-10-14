@@ -9,11 +9,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Inmigración Argentina</h1>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
-    </div>
+<!-- BARRA SUPERIOR CON SELECTOR DE IDIOMA -->
+<div class="top-bar">
+  <div class="idioma-selector">
+    <i class="fa-solid fa-globe"></i>
+    <button onclick="cambiarIdioma('es')" title="Español">
+      <img src="flag/españa.png" alt="Español">
+    </button>
+    <button onclick="cambiarIdioma('en')" title="English">
+      <img src="flag/estadosunidos.png" alt="English">
+    </button>
+    <button onclick="cambiarIdioma('fr')" title="Français">
+      <img src="flag/francia.png" alt="Français">
+    </button>
+    <button onclick="cambiarIdioma('de')" title="Deutsch">
+      <img src="flag/alemania.png" alt="Deutsch">
+    </button>
+  </div>
+</div>
+
+
+<!-- HEADER PRINCIPAL -->
+<header>
+  <div class="logo-container">
+    <img src="img/loguito.jpg" alt="Logo Inmigración Argentina" class="logo">
+   
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
     <nav id="nav">
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -29,8 +54,7 @@
   <section class="hero">
     <h2>Requisitos Migratorios</h2>
     <p>
-      Para iniciar tu trámite migratorio en Argentina deberás presentar documentación básica. 
-      A continuación te mostramos los principales requisitos:
+     Recuerda que no todos los casos requieren los mismos documentos. Nuestro equipo revisa tu situación y te indica que presentar especificamente segun tu tipo de residencia.
     </p>
   </section>
 
@@ -43,7 +67,7 @@
     <div class="card">
       <i class="fa-solid fa-file-shield icono"></i>
       <h3>Antecedentes Penales</h3>
-      <p>Certificado de antecedentes penales de tu país y de Argentina.</p>
+      <p>Certificado de antecedentes penales de tu país y de Argentina (legalizado o apostillado).</p>
     </div>
     <div class="card">
       <i class="fa-solid fa-file-circle-check icono"></i>
@@ -59,8 +83,35 @@
 
   
 
- <footer>
-  <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  <footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contacto</h3>
+      <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> +54 9 3518632045</p>
+      <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
+    </div>
+
+  <div class="footer-redes">
+      <h3>Seguinos</h3>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+          <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  </div>
 </footer>
 
 

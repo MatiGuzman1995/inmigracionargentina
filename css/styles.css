@@ -400,54 +400,70 @@ section h2::after {
 .btn-ver-todos:hover {
   background: #005fa3;
 }
-.card-equipo img {
-  width: 150px; /* tamaño visible en la tarjeta */
-  height: 150px;
-  border-radius: 50%; /* hace la imagen redonda */
-  object-fit: cover; /* ajusta la foto al recuadro sin deformar */
-  margin-bottom: 10px;
-}
-
+/* === Sección Equipo Mejorada === */
 .equipo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 40px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 50px 20px;
   max-width: 1100px;
   margin: 0 auto;
+  font-family: "Poppins", Arial, sans-serif; /* tipografía moderna */
 }
 
 .card-equipo {
   background: #ffffff;
   border: 1px solid #d6e9f8;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 14px;
+  padding: 25px 20px 30px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 86, 163, 0.1);
 }
 
 .card-equipo:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 86, 163, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 86, 163, 0.2);
 }
 
 .card-equipo img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border: 3px solid #0077c8;
 }
 
 .card-equipo h3 {
   color: #0056a3;
-  margin-bottom: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .card-equipo p {
-  font-size: 0.95rem;
   color: #444;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  text-align: justify;
+  padding: 0 10px;
+  max-height: 280px; /* para limitar texto largo */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b2d9f5 transparent;
 }
+
+/* Estilo scrollbar (solo para texto largo) */
+.card-equipo p::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-equipo p::-webkit-scrollbar-thumb {
+  background: #b2d9f5;
+  border-radius: 4px;
+}
+
 /* Estilos para Avisos Legales */
 .legal-section {
   background: #ffffff;
@@ -499,4 +515,528 @@ header.header {
 footer {
   padding: 20px;
   font-size: 0.95rem;
+
+}
+
+header {
+  text-align: center;
+  padding: 25px 0;
+  background: #fff;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.logo {
+  width: 150px; /* ancho deseado */
+  height: auto; /* altura proporcional */
+  border-radius: 10px; /* opcional, esquinas redondeadas */
+  border: 0px solid #0078d4;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+footer {
+  background: #00264d; /* azul oscuro elegante */
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px 10px 10px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-info, .footer-redes {
+  max-width: 250px;
+}
+
+.footer-info h3, .footer-redes h3 {
+  margin-bottom: 10px;
+  color: #00bfff;
+  font-size: 1.2em;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.footer-info i {
+  margin-right: 8px;
+  color: #00bfff;
+}
+
+.redes-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.redes-icons a {
+  color: #fff;
+  font-size: 1.4em;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.redes-icons a:hover {
+  color: #00bfff;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+
+.footer-bottom a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* --- Barra superior --- */
+.top-bar {
+  background: #00264d;
+  color: #fff;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.idioma-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.idioma-selector label {
+  font-weight: 500;
+}
+
+.idioma-selector select {
+  background: #fff;
+  color: #00264d;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.idioma-selector select:hover {
+  background: #e0e0e0;
+}
+
+/* === Estilo Mejorado para la Sección Equipo === */
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.card-equipo {
+  background: #ffffff;
+  border: 1px solid #d6e9f8;
+  border-radius: 16px;
+  padding: 30px 25px 35px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 86, 163, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-equipo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 86, 163, 0.25);
+}
+
+.card-equipo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0077c8;
+  margin-bottom: 15px;
+}
+
+.card-equipo h3 {
+  color: #003d6b;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.card-equipo h3 p {
+  font-size: 0.95rem;
+  color: #0077c8;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.card-equipo p {
+  color: #333;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* Efecto de aparición suave */
+.card-equipo {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.card-equipo:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.card-equipo:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-bar {
+  background-color: #f5f5f5;
+  color: #003d6b;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.idioma-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.idioma-selector i {
+  color: #0077c8;
+}
+
+.idioma-selector select {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #0077c8;
+  background-color: #fff;
+  color: #003d6b;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.idioma-selector select:hover {
+  background-color: #0077c8;
+  color: white;
+}
+
+/* HEADER PRINCIPAL */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Contenedor del logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  width: 160px; /* más grande */
+  height: auto;
+  border-radius: 12px; /* esquinas ligeramente redondeadas */
+  border: 0px solid #0078d4;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* MENÚ */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px; /* espacio entre botones */
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces del menú */
+nav ul li a {
+  text-decoration: none;
+  color: #0078d4;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #0078d4;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* MENU HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #0078d4;
+  border-radius: 2px;
+}
+
+/* Mostrar menú hamburguesa en pantallas pequeñas */
+@media screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  nav.show ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* ================= Sección Requisitos ================= */
+.requisitos-rapidos {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e0f3ff 0%, #ffffff 100%);
+  text-align: center;
+}
+
+#req-titulo {
+  font-size: 2rem;
+  color: #0056a3;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#req-titulo::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0078d4;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+#req-intro {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 15px auto 40px auto;
+  color: #333;
+}
+
+.req-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.req-card {
+  background: #ffffff;
+  padding: 25px 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 86, 163, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.req-card i {
+  font-size: 3rem;
+  color: #0078d4;
+}
+
+.req-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.req-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 86, 163, 0.15);
+}
+
+@media (max-width: 768px) {
+  .req-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Sección Quiénes Somos ===== */
+.quienes-somos {
+  background: linear-gradient(135deg, #a0caeb 0%, #ffffff 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quienes-somos h2 {
+  font-size: 2rem;
+  color: #0056a3;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.quienes-somos h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #9cc3dd;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+.quienes-somos p {
+  max-width: 800px;
+  margin: 15px auto;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.quienes-somos p strong {
+  color: #0077c8;
+}
+
+
+/* --- CONTACTO TEXTO --- */
+#contacto-texto {
+  font-size: 1.1rem;        /* Tamaño de texto un poco más grande */
+  color: #333;              /* Color de texto principal */
+  text-align: center;       /* Centrar el texto */
+  line-height: 1.6;         /* Espaciado entre líneas */
+  max-width: 700px;         /* Limitar ancho para que no sea muy largo */
+  margin: 10px auto 20px;   /* Centrado horizontal con espacio arriba y abajo */
+  padding: 0 15px;          /* Espacio interno a los lados en móviles */
+  font-family: 'Arial', sans-serif; /* Fuente limpia y legible */
+}
+
+#contacto-texto a {
+  color: #25D366;           /* Color verde WhatsApp para links si hay */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contacto-texto a:hover {
+  text-decoration: underline;
+}
+/* Contenedor superior */
+.top-bar {
+  display: flex;
+  justify-content: flex-end; /* 👈 mueve el selector a la derecha */
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 8px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Selector de idioma */
+.idioma-selector {
+  display: flex;
+  align-items: center; /* centrado vertical */
+  gap: 8px;
+  font-size: 1.3rem;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícono del globo */
+.idioma-selector i {
+  color: #007bff;
+}
+
+/* Botones de idioma (emoji o banderas) */
+.idioma-selector button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, opacity 0.2s;
+}
+
+.idioma-selector button:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Si usás imágenes (banderas PNG) */
+.idioma-selector img {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+.idioma-selector img:hover {
+  transform: scale(1.2);
 }

@@ -7,58 +7,118 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Inmigración Argentina</h1>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
-    </div>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="requisitos.html">Requisitos</a></li>
-        <li><a href="nosotros.html" class="active">Nosotros</a></li>
-          <li><a href="preguntas.html" >Preguntas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- BARRA SUPERIOR CON SELECTOR DE IDIOMA -->
+<div class="top-bar">
+  <div class="idioma-selector">
+    <i class="fa-solid fa-globe"></i>
+    <button onclick="cambiarIdioma('es')" title="Español">
+      <img src="flag/españa.png" alt="Español">
+    </button>
+    <button onclick="cambiarIdioma('en')" title="English">
+      <img src="flag/estadosunidos.png" alt="English">
+    </button>
+    <button onclick="cambiarIdioma('fr')" title="Français">
+      <img src="flag/francia.png" alt="Français">
+    </button>
+    <button onclick="cambiarIdioma('de')" title="Deutsch">
+      <img src="flag/alemania.png" alt="Deutsch">
+    </button>
+  </div>
+</div>
 
+
+<!-- HEADER PRINCIPAL -->
+<header>
+  <div class="logo-container">
+    <img src="img/loguito.jpg" alt="Logo Inmigración Argentina" class="logo">
+   
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html" >Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="requisitos.html">Requisitos</a></li>
+      <li><a href="nosotros.html"class="active">Nosotros</a></li>
+      <li><a href="preguntas.html">Preguntas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
   <!-- QUIÉNES SOMOS -->
   <section class="hero">
-    <h2>Quiénes Somos</h2>
+    <h2>Nuestro equipo</h2>
+    <p id="hero-texto">Un grupo de profesionales dedicados a acompañarte en cada paso de tu proceso migratorio en Argentina.</p>
   </section>
   <section>
     <div class="equipo">
       <div class="card-equipo">
-        <img src="img/persona2.jpeg" alt="Juan Pérez">
-        <h3>Juan Pérez</h3>
-        <p>Director General. Supervisa todos los procesos migratorios y coordina el equipo.</p>
+        <img src="img/Laura.jpg" alt="Laura">
+        <h3>María Laura Oyola Pautasso <p></p> Traductora Pública Nacional de Inglés – Matrícula N°.738</h3>
+        <p>Mi nombre es María Laura Oyola Pautasso, soy Traductora Pública Nacional de Inglés egresada de la Facultad de Lenguas de la Universidad Nacional de Córdoba, Argentina. Ejerzo como traductora profesional desde el año 2007 y tengo una amplia experiencia en la traducción de documentos jurídicos, del español al inglés y del inglés al español. Cuento con matrícula profesional otorgada por el Colegio de Traductores Públicos de la Provincia de Córdoba, lo cual me habilita a realizar traducciones de carácter público. También brindo mis servicios de traducción con firma digital, lo cual agiliza dichos trámites y ofrece la oportunidad de realizarlos a distancia.
+Avalan mi trayectoria todos los años de experiencia en diferentes instituciones y agencias de traducción donde he trabajado. Actualmente, me desempeño como traductora freelance y me dedico a la traducción de documentación relacionada con trámites migratorios, becas de estudio, pasantías laborales en el extranjero y demás documentos públicos que requieren la intervención de un traductor profesional matriculado.
+</p>
       </div>
       <div class="card-equipo">
-        <img src="img/persona1.jpg" alt="María López">
-        <h3>María López</h3>
-        <p>Asesora Legal. Brinda orientación profesional en trámites y normativa argentina.</p>
+        <img src="img/van.jpg" alt="Vanesa Molina">
+        <h3>Vanesa Molina <p></p>Coordinadora en atencion y servicios</h3>
+        <p>Soy bilingüe en inglés y español, con amplia experiencia en turismo y hospitalidad. Mi trayectoria me permitió trabajar con personas de distintas culturas, desarrollando una visión global basada en la empatía, la eficiencia y la responsabilidad.
+
+Hoy aplico este conocimiento en nuestra empresa, ayudando a quienes desean radicarse en Argentina a hacerlo de forma clara, confiable y organizada.
+
+Soluciones claras para un nuevo comienzo.</p>
       </div>
       <div class="card-equipo">
-        <img src="img/persona3.jpg" alt="Carlos Gómez">
-        <h3>Carlos Gómez</h3>
-        <p>Gestor de Documentación. Encargado de certificados, antecedentes y apostillas.</p>
+        <img src="img/persona2.jpeg" alt="JC">
+        <h3> Juan Cruz  <p></p> Estudiante de Ciencias de la Computación y Física
+</h3>
+       <p>Argentina es una tierra rica en cultura y experiencias, hecha para disfrutar. Tu sueño de construir una vida aquí es nuestro proyecto compartido.
+
+Mi enfoque está en ofrecer soluciones confiables y profesionales para todas tus necesidades. Déjame encargarme de las complejidades, para que puedas echar raíces firmes y saludables en esta tierra maravillosa y enfocarte en lo que realmente importa: vivir tu sueño argentino.</p>
+
       </div>
-      <div class="card-equipo">
-        <img src="img/persona4.jpg" alt="Ana Torres">
-        <h3>Ana Torres</h3>
-        <p>Coordinadora de Clientes. Atiende consultas y asegura una experiencia eficiente.</p>
-      </div>
+      
     </div>
   </section>
 
   <!-- FOOTER -->
  <footer>
-  <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contacto</h3>
+      <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +54 9 3518632045</p>
+      <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
+    </div>
+
+   <div class="footer-redes">
+      <h3>Seguinos</h3>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+          <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  </div>
 </footer>
 
 

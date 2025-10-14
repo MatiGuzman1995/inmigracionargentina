@@ -6,85 +6,148 @@
   <title>Contacto - Inmigración Argentina</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function() {
-      emailjs.init("TU_PUBLIC_KEY"); // Reemplazá con tu Public Key de EmailJS
+      emailjs.init("CShpiAcwviugeuDn3"); // 🔁 Reemplazá esto por tu clave pública real
     })();
   </script>
 </head>
 <body>
-  <header>
-    <h1>Inmigración Argentina</h1>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
+
+<!-- BARRA SUPERIOR CON SELECTOR DE IDIOMA -->
+<div class="top-bar">
+  <div class="idioma-selector">
+    <i class="fa-solid fa-globe"></i>
+    <button onclick="cambiarIdioma('es')" title="Español">
+      <img src="flag/españa.png" alt="Español">
+    </button>
+    <button onclick="cambiarIdioma('en')" title="English">
+      <img src="flag/estadosunidos.png" alt="English">
+    </button>
+    <button onclick="cambiarIdioma('fr')" title="Français">
+      <img src="flag/francia.png" alt="Français">
+    </button>
+    <button onclick="cambiarIdioma('de')" title="Deutsch">
+      <img src="flag/alemania.png" alt="Deutsch">
+    </button>
+  </div>
+</div>
+
+
+<header>
+  <div class="logo-container">
+    <img src="img/loguito.jpg" alt="Logo Inmigración Argentina" class="logo">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="requisitos.html">Requisitos</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="preguntas.html">Preguntas</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Contacto</h2>
+  <p>Escribinos y te responderemos a la brevedad.</p>
+</section>
+
+<section>
+  <form id="contact-form">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+    <!-- Campos ocultos para EmailJS -->
+    <input type="hidden" name="name" value="">
+    <input type="hidden" name="title" value="Nuevo mensaje desde el sitio web">
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div style="margin-top:20px; text-align:center;">
+    <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" 
+       target="_blank" class="btn-whatsapp">
+      <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contacto</h3>
+      <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +54 9 3518632045</p>
+      <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
     </div>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="requisitos.html">Requisitos</a></li>
-         <li><a href="nosotros.html">Nosotros</a></li>
-           <li><a href="preguntas.html" >Preguntas</a></li>
-        <li><a href="contacto.html" class="active">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Contacto</h2>
-    <p>Escribinos y te responderemos a la brevedad.</p>
-  </section>
-  <section>
-    <form id="contact-form">
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre" required><br><br>
-
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
-
-      <button type="submit">Enviar</button>
-    </form>
-
-    <div style="margin-top:20px; text-align:center;">
-      <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20consultar%20sobre%20inmigración" 
-         target="_blank" class="btn-whatsapp">
-        <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
-      </a>
+    <div class="footer-redes">
+      <h3>Seguinos</h3>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
 
- <footer>
-  <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  </div>
 </footer>
 
+<!-- SCRIPT PARA ENVIAR FORMULARIO -->
+<script>
+  const form = document.getElementById('contact-form');
 
-  <script>
-    // EmailJS - envío de formulario
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-      // Reemplazá 'TU_SERVICE_ID' y 'TU_TEMPLATE_ID' con los de EmailJS
-      emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
-        .then(() => {
-          alert('Mensaje enviado con éxito!');
-          form.reset();
-        }, (err) => {
-          alert('Error al enviar mensaje: ' + JSON.stringify(err));
-        });
-    });
-  </script>
-   <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
-    });
-  </script>
+    // Copiar nombre al campo oculto "name"
+    form.querySelector('input[name="name"]').value = form.querySelector('#nombre').value;
+
+    // Enviar con EmailJS
+    emailjs.sendForm('service_42ge7dm', 'template_u1jgrze', this)
+      .then(() => {
+        alert('Mensaje enviado con éxito!');
+        form.reset();
+      }, (err) => {
+        alert('Error al enviar mensaje: ' + JSON.stringify(err));
+      });
+  });
+</script>
+
+<!-- MENÚ RESPONSIVE -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>

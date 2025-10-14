@@ -64,12 +64,36 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Inmigración Argentina</h1>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
-    </div>
+<!-- BARRA SUPERIOR CON SELECTOR DE IDIOMA -->
+<div class="top-bar">
+  <div class="idioma-selector">
+    <i class="fa-solid fa-globe"></i>
+    <button onclick="cambiarIdioma('es')" title="Español">
+      <img src="flag/españa.png" alt="Español">
+    </button>
+    <button onclick="cambiarIdioma('en')" title="English">
+      <img src="flag/estadosunidos.png" alt="English">
+    </button>
+    <button onclick="cambiarIdioma('fr')" title="Français">
+      <img src="flag/francia.png" alt="Français">
+    </button>
+    <button onclick="cambiarIdioma('de')" title="Deutsch">
+      <img src="flag/alemania.png" alt="Deutsch">
+    </button>
+  </div>
+</div>
+
+
+<!-- HEADER PRINCIPAL -->
+<header>
+  <div class="logo-container">
+    <img src="img/loguito.jpg" alt="Logo Inmigración Argentina" class="logo">
+   
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
     <nav id="nav">
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -88,24 +112,58 @@
       <h2>Preguntas Frecuentes</h2>
     </section>
     <section>
-      <div class="accordion">¿Cuáles son los requisitos para obtener la residencia temporal?</div>
+      <div class="accordion">¿Qué tipo de residencia puedo solicitar en Argentina?</div>
       <div class="panel">
-        <p>Para obtener la residencia temporal, generalmente necesitas pasaporte vigente, certificado de antecedentes penales, y prueba de ingresos o trabajo. Revisa la sección de Requisitos para más detalles.</p>
+        <p>Hay residencias temporarias, permanentes y por vínculo familiar. Nuestro equipo te asesora según tu nacionalidad y situación.</p>
+        </div>
+
+      <div class="accordion">¿Puedo trabajar mientras tramito la residencia?</div>
+      <div class="panel">
+        <p>Sí, con constancia de residencia en trámite emitida por Migraciones.</p>
       </div>
 
-      <div class="accordion">¿Cuánto tiempo demora el trámite de residencia permanente?</div>
+      <div class="accordion">.¿Qué diferencia hay entre residencia y ciudadanía argentina?</div>
       <div class="panel">
-        <p>El tiempo varía según la documentación y el tipo de trámite, pero normalmente puede tardar entre 6 y 12 meses.</p>
+        <p>La residencia te permite vivir y trabajar legalmente; la ciudadanía te otorga los mismos derechos que un ciudadano argentino (pasaporte, voto, etc.).
+</p>
       </div>
 
-      <div class="accordion">¿Puedo realizar todos los trámites desde fuera de Argentina?</div>
+      <div class="accordion">¿ Los documentos deben estar traducidos al español?
+</div>
       <div class="panel">
-        <p>Algunos trámites requieren presencia física, otros se pueden iniciar desde el exterior. Recomendamos contactarnos para guiarte según tu caso.</p>
+        <p>Sí, toda documentación extranjera debe ser traducida por un traductor público matriculado. Nuestro equipo ofrece ese servicio.
+</p>
       </div>
 
-      <div class="accordion">¿Ofrecen asesoría legal para trámites complejos?</div>
+       <div class="accordion">¿Qué es una apostilla de La Haya y para qué sirve?</div>
       <div class="panel">
-        <p>Sí, nuestro equipo de abogados especializados en inmigración puede asesorarte en casos complejos o situaciones especiales.</p>
+        <p>Es una certificación internacional que valida tus documentos en Argentina. Debe ser realizada en el mismo país que se emite. Cualquier duda lo asesoramos.</p>
+      </div>
+
+       <div class="accordion">¿Ustedes son un organismo del gobierno?</div>
+      <div class="panel">
+        <p>No. Somos una consultora privada especializada en trámites migratorios y traducciones oficiales. No representamos a la Dirección Nacional de Migraciones.</p>
+      </div>
+
+       <div class="accordion">¿Trabajan con extranjeros que aún no están en Argentina?</div>
+      <div class="panel">
+        <p>Sí. Asistimos tanto a personas que ya se encuentran en el país como a quienes planean viajar pronto.</p>
+      </div>
+
+       <div class="accordion">¿. Ofrecen atención en otros idiomas?</div>
+      <div class="panel">
+        <p>Sí, brindamos asesoramiento en español, inglés y francés.</p>
+      </div>
+
+       <div class="accordion">.¿Cuánto cuesta el servicio?</div>
+      <div class="panel">
+        <p>El valor depende del tipo de trámite y la complejidad del caso. Ofrecemos presupuestos personalizados sin compromiso. </p>
+      </div>
+
+       <div class="accordion">¿Puedo realizar todos los trámites desde afuera del país ?
+</div>
+      <div class="panel">
+        <p>Algunos trámites requieren presencia física , otros se pueden iniciar desde el exterior . Recomendamos contactarnos para guiarte según tu caso .</p>
       </div>
 
     </div>
@@ -113,7 +171,34 @@
 
   <!-- FOOTER -->
  <footer>
-  <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contacto</h3>
+      <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> +54 9 3518632045</p>
+      <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
+    </div>
+
+    <div class="footer-redes">
+      <h3>Seguinos</h3>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+          <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+  </div>
 </footer>
 
 

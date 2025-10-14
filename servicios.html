@@ -9,67 +9,119 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Inmigración Argentina</h1>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
-    </div>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html" class="active">Servicios</a></li>
-        <li><a href="requisitos.html">Requisitos</a></li>
-         <li><a href="nosotros.html">Nosotros</a></li>
-           <li><a href="preguntas.html" >Preguntas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Nuestros Servicios</h2>
-    <p>
-      Te acompañamos en cada etapa de tu proceso migratorio hacia Argentina, con
-      soluciones claras, rápidas y confiables.
+<!-- BARRA SUPERIOR CON SELECTOR DE IDIOMA -->
+<div class="top-bar">
+  <div class="idioma-selector">
+    <i class="fa-solid fa-globe"></i>
+    <button onclick="cambiarIdioma('es')" title="Español">
+      <img src="flag/españa.png" alt="Español">
+    </button>
+    <button onclick="cambiarIdioma('en')" title="English">
+      <img src="flag/estadosunidos.png" alt="English">
+    </button>
+    <button onclick="cambiarIdioma('fr')" title="Français">
+      <img src="flag/francia.png" alt="Français">
+    </button>
+    <button onclick="cambiarIdioma('de')" title="Deutsch">
+      <img src="flag/alemania.png" alt="Deutsch">
+    </button>
+  </div>
+</div>
+
+
+<!-- HEADER PRINCIPAL -->
+<header>
+  <div class="logo-container">
+    <img src="img/loguito.jpg" alt="Logo Inmigración Argentina" class="logo">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html" id="menu-inicio">Inicio</a></li>
+      <li><a href="servicios.html" class="active" id="menu-servicios">Servicios</a></li>
+      <li><a href="requisitos.html" id="menu-requisitos">Requisitos</a></li>
+      <li><a href="nosotros.html" id="menu-nosotros">Nosotros</a></li>
+      <li><a href="preguntas.html" id="menu-preguntas">Preguntas</a></li>
+      <li><a href="contacto.html" id="menu-contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2 id="hero-titulo">Nuestros Servicios</h2>
+  <p id="hero-texto">
+    Te acompañamos en cada etapa de tu proceso migratorio hacia Argentina, con soluciones claras, rápidas y confiables.
+  </p>
+</section>
+
+<!-- SERVICIOS -->
+<section class="servicios">
+  <div class="card">
+    <i class="fa-solid fa-passport icono"></i>
+    <h3 id="serv1-titulo">Residencias</h3>
+    <p id="serv1-texto">
+      Tramitamos residencias temporarias y permanentes para que vivas legalmente en Argentina.
     </p>
-  </section>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-scale-balanced icono"></i>
+    <h3 id="serv2-titulo">Asesoría Legal</h3>
+    <p id="serv2-texto">
+      Orientación profesional en trámites migratorios, contratos y normativas argentinas.
+    </p>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-file-lines icono"></i>
+    <h3 id="serv3-titulo">Gestión de Documentación</h3>
+    <p id="serv3-texto">
+      Turnos, certificados, antecedentes penales, apostillas y traducciones oficiales.
+    </p>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-language icono"></i>
+    <h3 id="serv4-titulo">Intérprete</h3>
+    <p id="serv4-texto">
+      Asistencia lingüística profesional y acompañamiento personalizado durante todos tus trámites y entrevistas migratorias.
+    </p>
+  </div>
+</section>
 
-  <section class="servicios">
-    <div class="card">
-      <i class="fa-solid fa-passport icono"></i>
-      <h3>Residencias</h3>
-      <p>
-        Tramitamos residencias temporarias y permanentes para que vivas legalmente en Argentina.
-      </p>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3 id="footer-contacto">Contacto</h3>
+      <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +54 9 3518632045</p>
+      <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
     </div>
-    <div class="card">
-      <i class="fa-solid fa-scale-balanced icono"></i>
-      <h3>Asesoría Legal</h3>
-      <p>
-        Orientación profesional en trámites migratorios, contratos y normativas argentinas.
-      </p>
-    </div>
-    <div class="card">
-      <i class="fa-solid fa-file-lines icono"></i>
-      <h3>Gestión de Documentación</h3>
-      <p>
-        Turnos, certificados, antecedentes penales, apostillas y traducciones oficiales.
-      </p>
-    </div>
-    <div class="card">
-      <i class="fa-solid fa-people-roof icono"></i>
-      <h3>Reunificación Familiar</h3>
-      <p>
-        Asistencia en procesos de radicación para familiares directos de residentes y ciudadanos.
-      </p>
-    </div>
-  </section>
 
-  <footer>
-  <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+    <div class="footer-redes">
+      <h3 id="footer-seguinos">Seguinos</h3>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html" id="footer-avisos">Avisos Legales</a></p>
+  </div>
 </footer>
 
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

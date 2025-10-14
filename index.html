@@ -41,16 +41,16 @@
     <span></span><span></span><span></span>
   </div>
 
-  <nav id="nav">
-    <ul>
-      <li><a href="index.html" class="active" id="menu-inicio">Inicio</a></li>
-      <li><a href="servicios.html" id="menu-servicios">Servicios</a></li>
-      <li><a href="requisitos.html" id="menu-requisitos">Requisitos</a></li>
-      <li><a href="nosotros.html" id="menu-nosotros">Nosotros</a></li>
-      <li><a href="preguntas.html" id="menu-preguntas">Preguntas</a></li>
-      <li><a href="contacto.html" id="menu-contacto">Contacto</a></li>
-    </ul>
-  </nav>
+     <nav id="nav">
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="requisitos.html">Requisitos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="preguntas.html" >Preguntas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
 </header>
 
 <!-- HERO -->
@@ -155,7 +155,14 @@
     </p>
   </div>
 </footer>
-
+  <!-- MENU HAMBURGUESA -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
 <script src="js/script.js"></script>
 
 </body>

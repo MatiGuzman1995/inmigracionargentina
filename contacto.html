@@ -59,32 +59,32 @@
 </header>
 
 <section class="hero">
-  <h2>Contacto</h2>
-  <p>Envianos tu consulta y te responderemos a la brevedad.</p>
+  <h2>Contact</h2>
+  <p>Send us your message and we’ll get back to you shortly.</p>
 </section>
 
 <section>
   <form id="contact-form">
-    <label for="nombre">Nombre:</label><br>
+    <label for="nombre">Name:</label><br>
     <input type="text" id="nombre" name="nombre" required><br><br>
 
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" required><br><br>
 
-    <label for="mensaje">Mensaje:</label><br>
+    <label for="mensaje">Message:</label><br>
     <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
 
-    <!-- Campos ocultos para EmailJS -->
+    <!-- Hidden fields for EmailJS -->
     <input type="hidden" name="name" value="">
-    <input type="hidden" name="title" value="Nuevo mensaje desde el sitio web">
+    <input type="hidden" name="title" value="New message from website">
 
-    <button type="submit">Enviar</button>
+    <button type="submit">Send</button>
   </form>
 
   <div style="margin-top:20px; text-align:center;">
-    <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" 
+    <a href="https://wa.me/5493518632045?text=Hello,%20I'd%20like%20to%20ask%20about%20immigration" 
        target="_blank" class="btn-whatsapp">
-      <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+      <i class="fa-brands fa-whatsapp"></i> Contact us on WhatsApp
     </a>
   </div>
 </section>
@@ -92,14 +92,14 @@
 <footer>
   <div class="footer-container">
     <div class="footer-info">
-      <h3>Contacto</h3>
+      <h3>Contact</h3>
       <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
-      <p><i class="fa-solid fa-phone"></i> +54 9 3518632045</p>
+      <p><i class="fa-solid fa-phone"></i> +54 9 351 863 2045</p>
       <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
     </div>
 
     <div class="footer-redes">
-      <h3>Seguinos</h3>
+      <h3>Follow Us</h3>
       <div class="redes-icons">
         <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
           <i class="fa-brands fa-facebook-f"></i>
@@ -107,7 +107,7 @@
         <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://wa.me/5493518632045?text=Hola,%20quiero%20consultar%20sobre%20inmigración" target="_blank" aria-label="WhatsApp">
+        <a href="https://wa.me/5493518632045?text=Hello,%20I'd%20like%20to%20ask%20about%20immigration" target="_blank" aria-label="WhatsApp">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
       </div>
@@ -115,32 +115,32 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 Inmigración Argentina | <a href="avisos.html">Avisos Legales</a></p>
+    <p>&copy; 2025 Immigrate To Argentina | <a href="avisos.html">Legal Notices</a></p>
   </div>
 </footer>
 
-<!-- SCRIPT PARA ENVIAR FORMULARIO -->
+<!-- SCRIPT TO SEND FORM -->
 <script>
   const form = document.getElementById('contact-form');
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Copiar nombre al campo oculto "name"
+    // Copy name to hidden "name" field
     form.querySelector('input[name="name"]').value = form.querySelector('#nombre').value;
 
-    // Enviar con EmailJS
+    // Send with EmailJS
     emailjs.sendForm('service_42ge7dm', 'template_u1jgrze', this)
       .then(() => {
-        alert('Mensaje enviado con éxito!');
+        alert('Message sent successfully!');
         form.reset();
       }, (err) => {
-        alert('Error al enviar mensaje: ' + JSON.stringify(err));
+        alert('Error sending message: ' + JSON.stringify(err));
       });
   });
 </script>
 
-<!-- MENÚ RESPONSIVE -->
+<!-- RESPONSIVE MENU -->
 <script>
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('nav');

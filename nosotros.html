@@ -15,9 +15,7 @@
 <div class="top-bar">
   <div class="idioma-selector">
     <i class="fa-solid fa-globe"></i>
-    <button onclick="cambiarIdioma('es')" title="Español">
-      <img src="flag/españa.png" alt="Español">
-    </button>
+ 
     <button onclick="cambiarIdioma('en')" title="English">
       <img src="flag/estadosunidos.png" alt="English">
     </button>
@@ -43,20 +41,20 @@
   </div>
 
   <nav id="nav">
-    <ul>
-      <li><a href="index.html" >Home</a></li>
-      <li><a href="servicios.html">Services</a></li>
-      <li><a href="requisitos.html">Requirements</a></li>
-      <li><a href="nosotros.html" class="active">About Us</a></li>
-      <li><a href="preguntas.html">FAQ</a></li>
-      <li><a href="contacto.html" >Contact</a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li><a href="index.html"  id="menu-home">Home</a></li>
+    <li><a href="servicios.html" id="menu-servicios">Services</a></li>
+    <li><a href="requisitos.html" id="menu-requisitos">Requirements</a></li>
+    <li><a href="nosotros.html" class="active" id="menu-nosotros">About Us</a></li>
+    <li><a href="preguntas.html" id="menu-preguntas">FAQ</a></li>
+    <li><a href="contacto.html" id="menu-contacto">Contact</a></li>
+  </ul>
+</nav>
 </header>
 
 <!-- ABOUT US -->
 <section class="hero">
-  <h2>Our Team</h2>
+<h2 id="hero-titulo">Our Team</h2>
   <p id="hero-texto">A group of professionals dedicated to guiding you through every step of your immigration process in Argentina.</p>
 </section>
 
@@ -64,8 +62,8 @@
   <div class="equipo">
     <div class="card-equipo">
       <img src="img/Laura.jpg" alt="Laura">
-      <h3>María Laura Oyola <p></p> Certified Public Translator of English – License No. 738</h3>
-      <p>I am a Certified Public Translator of English, graduated from the Faculty of Languages at the National University of Córdoba, Argentina. I have been working as a professional translator since 2007, with extensive experience translating legal documents from Spanish to English and English to Spanish.  
+      <h3 id="miembro1-nombre">María Laura Oyola <p></p> Certified Public Translator of English – License No. 738</h3>
+     <p id="miembro1-texto">I am a Certified Public Translator of English, graduated from the Faculty of Languages at the National University of Córdoba, Argentina. I have been working as a professional translator since 2007, with extensive experience translating legal documents from Spanish to English and English to Spanish.  
       I hold a professional license granted by the Association of Certified Public Translators of Córdoba, which authorizes me to carry out official public translations.  
       I also offer digital signature translation services, which streamline the process and allow for remote work.  
       Currently, I specialize in translating documentation related to immigration procedures, study scholarships, international internships, and other public documents requiring a certified translator.</p>
@@ -73,8 +71,8 @@
 
     <div class="card-equipo">
       <img src="img/van.jpg" alt="Vanesa Molina">
-      <h3>Vanesa Molina <p></p>Service and Client Care Coordinator</h3>
-      <p>I am bilingual in English and Spanish, with broad experience in tourism and hospitality.  
+      <h3 id="miembro2-nombre">Vanesa Molina <p></p>Service and Client Care Coordinator</h3>
+      <p id="miembro2-texto">I am bilingual in English and Spanish, with broad experience in tourism and hospitality.  
       My career has allowed me to work with people from different cultures, developing a global vision based on empathy, efficiency, and responsibility.  
       Today, I apply this knowledge in our company, helping those who wish to settle in Argentina to do so in a clear, reliable, and organized way.  
       <br><em>Clear solutions for a new beginning.</em></p>
@@ -82,8 +80,8 @@
 
     <div class="card-equipo">
       <img src="img/persona2.jpeg" alt="Juan Cruz">
-      <h3>Juan Cruz <p></p> Student of Computer Science and Physics</h3>
-      <p>Argentina is a land rich in culture and experiences — made to be enjoyed.  
+      <h3 id="miembro3-nombre">Juan Cruz <p></p> Student of Computer Science and Physics</h3>
+     <p id="miembro3-texto">Argentina is a land rich in culture and experiences — made to be enjoyed.  
       Your dream of building a life here is our shared project.  
       My focus is on offering reliable and professional solutions for all your needs.  
       Let me handle the complexities, so you can establish strong and healthy roots in this wonderful country and focus on what truly matters: <em>living your Argentine dream.</em></p>
@@ -130,6 +128,8 @@
     nav.classList.toggle('show');
   });
 </script>
+<script src="js/traducciones.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

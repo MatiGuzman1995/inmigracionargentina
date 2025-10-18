@@ -68,9 +68,7 @@
 <div class="top-bar">
   <div class="idioma-selector">
     <i class="fa-solid fa-globe"></i>
-    <button onclick="cambiarIdioma('es')" title="Español">
-      <img src="flag/españa.png" alt="Español">
-    </button>
+   
     <button onclick="cambiarIdioma('en')" title="English">
       <img src="flag/estadosunidos.png" alt="English">
     </button>
@@ -94,72 +92,72 @@
   <div class="menu-toggle" id="menu-toggle">
     <span></span><span></span><span></span>
   </div>
-     <nav id="nav">
-    <ul>
-      <li><a href="index.html" >Home</a></li>
-      <li><a href="servicios.html">Services</a></li>
-      <li><a href="requisitos.html">Requirements</a></li>
-      <li><a href="nosotros.html" >About Us</a></li>
-      <li><a href="preguntas.html" class="active">FAQ</a></li>
-      <li><a href="contacto.html" >Contact</a></li>
-    </ul>
-  </nav>
+      <nav id="nav">
+  <ul>
+    <li><a href="index.html"  id="menu-home">Home</a></li>
+    <li><a href="servicios.html" id="menu-servicios">Services</a></li>
+    <li><a href="requisitos.html" id="menu-requisitos">Requirements</a></li>
+    <li><a href="nosotros.html"  id="menu-nosotros">About Us</a></li>
+    <li><a href="preguntas.html"class="active" id="menu-preguntas">FAQ</a></li>
+    <li><a href="contacto.html" id="menu-contacto">Contact</a></li>
+  </ul>
+</nav>
   </header>
 
 <!-- FAQ -->
 <section class="faq">
   <div class="faq-container">
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faq-titulo">Frequently Asked Questions</h2>
   </section>
   <section>
-    <div class="accordion">What type of residency can I apply for in Argentina?</div>
-    <div class="panel">
-      <p>There are temporary, permanent, and family-based residencies. Our team will advise you based on your nationality and personal situation.</p>
+   <div class="accordion" id="faq1-q">What type of residency can I apply for in Argentina?</div>
+    <div class="panel"><p id="faq1-a">
+     There are temporary, permanent, and family-based residencies. Our team will advise you based on your nationality and personal situation.
     </div>
 
-    <div class="accordion">Can I work while my residency is being processed?</div>
-    <div class="panel">
-      <p>Yes, as long as you have a residency-in-process certificate issued by Immigration.</p>
+   <div class="accordion" id="faq2-q">Can I work while my residency is being processed?</div>
+    <div class="panel"><p id="faq2-a">
+      Yes, as long as you have a residency-in-process certificate issued by Immigration.
     </div>
 
-    <div class="accordion">What is the difference between residency and Argentine citizenship?</div>
-    <div class="panel">
-      <p>Residency allows you to live and work legally in Argentina; citizenship grants you the same rights as an Argentine citizen (passport, voting rights, etc.).</p>
+    <div class="accordion" id="faq3-q">What is the difference between residency and Argentine citizenship?</div>
+    <div class="panel"><p id="faq3-a">
+      Residency allows you to live and work legally in Argentina; citizenship grants you the same rights as an Argentine citizen (passport, voting rights, etc.).
     </div>
 
-    <div class="accordion">Do my documents need to be translated into Spanish?</div>
-    <div class="panel">
-      <p>Yes, all foreign documents must be translated by a certified public translator. Our team provides this service.</p>
+    <div class="accordion" id="faq4-q">Do my documents need to be translated into Spanish?</div>
+    <div class="panel"><p id="faq4-a">
+      Yes, all foreign documents must be translated by a certified public translator. Our team provides this service.
     </div>
 
-    <div class="accordion">What is a Hague Apostille and what is it used for?</div>
-    <div class="panel">
-      <p>It’s an international certification that validates your documents in Argentina. It must be issued in the same country where the document was created. We can guide you through this process if needed.</p>
+    <div class="accordion" id="faq5-q">What is a Hague Apostille and what is it used for?</div>
+    <div class="panel"><p id="faq5-a">
+      It’s an international certification that validates your documents in Argentina. It must be issued in the same country where the document was created. We can guide you through this process if needed.
     </div>
 
-    <div class="accordion">Are you a government agency?</div>
-    <div class="panel">
-      <p>No, we are a private consultancy specialized in immigration procedures and official translations. We do not represent the National Immigration Office.</p>
+    <div class="accordion" id="faq6-q">Are you a government agency?</div>
+    <div class="panel"><p id="faq6-a">
+      No, we are a private consultancy specialized in immigration procedures and official translations. We do not represent the National Immigration Office.
     </div>
 
-    <div class="accordion">Do you work with foreigners who are not yet in Argentina?</div>
-    <div class="panel">
-      <p>Yes, we assist both individuals who are already in the country and those who are planning to travel soon.</p>
+    <div class="accordion" id="faq7-q">Do you work with foreigners who are not yet in Argentina?</div>
+    <div class="panel"><p id="faq7-a">
+      Yes, we assist both individuals who are already in the country and those who are planning to travel soon.
     </div>
 
-    <div class="accordion">Do you offer assistance in other languages?</div>
-    <div class="panel">
-      <p>Yes, we provide support in Spanish, English, and French.</p>
+    <div class="accordion" id="faq8-q">Do you offer assistance in other languages?</div>
+    <div class="panel"><p id="faq8-a">
+      Yes, we provide support in Spanish, English, and French.
     </div>
 
-    <div class="accordion">How much does the service cost?</div>
-    <div class="panel">
-      <p>The price depends on the type of procedure and the complexity of each case. We offer personalized quotes with no obligation.</p>
+    <div class="accordion" id="faq9-q">How much does the service cost?</div>
+    <div class="panel"><p id="faq9-a">
+      The price depends on the type of procedure and the complexity of each case. We offer personalized quotes with no obligation.
     </div>
 
-    <div class="accordion">Can I complete all procedures from outside the country?</div>
-    <div class="panel">
-      <p>Some procedures require physical presence, while others can be started from abroad. We recommend contacting us so we can guide you according to your specific case.</p>
+    <div class="accordion" id="faq10-q">Can I complete all procedures from outside the country?</div>
+    <div class="panel"><p id="faq10-a">
+      Some procedures require physical presence, while others can be started from abroad. We recommend contacting us so we can guide you according to your specific case.
     </div>
 
   </div>
@@ -220,5 +218,8 @@
     });
   });
 </script>
+<script src="js/traducciones.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>

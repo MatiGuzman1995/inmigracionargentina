@@ -13,9 +13,7 @@
 <div class="top-bar">
   <div class="idioma-selector">
     <i class="fa-solid fa-globe"></i>
-    <button onclick="cambiarIdioma('es')" title="Español">
-      <img src="flag/españa.png" alt="Español">
-    </button>
+  
     <button onclick="cambiarIdioma('en')" title="English">
       <img src="flag/estadosunidos.png" alt="English">
     </button>
@@ -39,21 +37,21 @@
   <div class="menu-toggle" id="menu-toggle">
     <span></span><span></span><span></span>
   </div>
-   <nav id="nav">
-    <ul>
-      <li><a href="index.html" >Home</a></li>
-      <li><a href="servicios.html">Services</a></li>
-      <li><a href="requisitos.html"class="active">Requirements</a></li>
-      <li><a href="nosotros.html" >About Us</a></li>
-      <li><a href="preguntas.html" >FAQ</a></li>
-      <li><a href="contacto.html" >Contact</a></li>
-    </ul>
-  </nav>
+  <nav id="nav">
+  <ul>
+    <li><a href="index.html"  id="menu-home">Home</a></li>
+    <li><a href="servicios.html" id="menu-servicios">Services</a></li>
+    <li><a href="requisitos.html" class="active" id="menu-requisitos">Requirements</a></li>
+    <li><a href="nosotros.html" id="menu-nosotros">About Us</a></li>
+    <li><a href="preguntas.html" id="menu-preguntas">FAQ</a></li>
+    <li><a href="contacto.html" id="menu-contacto">Contact</a></li>
+  </ul>
+</nav>
   </header>
 
 <section class="hero">
-  <h2>Immigration Requirements</h2>
-  <p>
+  <h2 id="hero-titulo">Immigration Requirements</h2>
+  <p id="hero-texto">
     Remember that each case requires specific documentation. Our team reviews your situation and guides you on exactly what to submit according to your type of residence.
   </p>
 </section>
@@ -61,23 +59,25 @@
 <section class="servicios requisitos">
   <div class="card">
     <i class="fa-solid fa-passport icono"></i>
-    <h3>Valid Passport</h3>
-    <p>A valid and well-preserved document issued by your country of origin.</p>
+    <h3 id="req1-titulo">Valid Passport</h3>
+    <p id="req1-texto">A valid and well-preserved document issued by your country of origin.</p>
   </div>
   <div class="card">
     <i class="fa-solid fa-file-shield icono"></i>
-    <h3>Criminal Record Certificate</h3>
-    <p>Criminal record certificate from both your country of origin and Argentina (legalized or apostilled).</p>
+    <h3 id="req2-titulo">Criminal Record Certificate</h3>
+    <p id="req2-texto">Criminal record certificate from both your country of origin and Argentina (legalized or apostilled).</p>
   </div>
   <div class="card">
     <i class="fa-solid fa-file-circle-check icono"></i>
-    <h3>Birth Certificate</h3>
-    <p>Legalized document, and if required, translated into Spanish.</p>
+    
+<h3 id="req3-titulo">Birth Certificate</h3>
+   <p id="req3-texto">Legalized document, and if required, translated into Spanish.</p>
   </div>
   <div class="card">
     <i class="fa-solid fa-briefcase icono"></i>
-    <h3>Proof of Income</h3>
-    <p>Evidence of employment, income, or means of support ensuring your stay in Argentina.</p>
+   
+<h3 id="req4-titulo">Proof of Income</h3>
+    <p id="req4-texto">Evidence of employment, income, or means of support ensuring your stay in Argentina.</p>
   </div>
 </section>
 
@@ -120,6 +120,8 @@
   });
 </script>
 
+<script src="js/traducciones.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

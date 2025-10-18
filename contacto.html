@@ -21,9 +21,7 @@
 <div class="top-bar">
   <div class="idioma-selector">
     <i class="fa-solid fa-globe"></i>
-    <button onclick="cambiarIdioma('es')" title="Español">
-      <img src="flag/españa.png" alt="Español">
-    </button>
+   
     <button onclick="cambiarIdioma('en')" title="English">
       <img src="flag/estadosunidos.png" alt="English">
     </button>
@@ -46,48 +44,47 @@
     <span></span><span></span><span></span>
   </div>
 
-   <nav id="nav">
-    <ul>
-      <li><a href="index.html" >Home</a></li>
-      <li><a href="servicios.html">Services</a></li>
-      <li><a href="requisitos.html">Requirements</a></li>
-      <li><a href="nosotros.html">About Us</a></li>
-      <li><a href="preguntas.html">FAQ</a></li>
-      <li><a href="contacto.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
+    <nav id="nav">
+  <ul>
+    <li><a href="index.html"  id="menu-home">Home</a></li>
+    <li><a href="servicios.html" id="menu-servicios">Services</a></li>
+    <li><a href="requisitos.html" id="menu-requisitos">Requirements</a></li>
+    <li><a href="nosotros.html" id="menu-nosotros">About Us</a></li>
+    <li><a href="preguntas.html" id="menu-preguntas">FAQ</a></li>
+    <li><a href="contacto.html"class="active" id="menu-contacto">Contact</a></li>
+  </ul>
+</nav>
 </header>
 
 <section class="hero">
-  <h2>Contact</h2>
-  <p>Send us your message and we’ll get back to you shortly.</p>
+  <h2 id="hero-titulo">Contact</h2>
+  <p id="hero-texto">Send us your message and we’ll get back to you shortly.</p>
 </section>
 
 <section>
   <form id="contact-form">
-    <label for="nombre">Name:</label><br>
+    <label for="nombre" id="label-nombre">Name:</label><br>
     <input type="text" id="nombre" name="nombre" required><br><br>
 
-    <label for="email">Email:</label><br>
+    <label for="email" id="label-email">Email:</label><br>
     <input type="email" id="email" name="email" required><br><br>
 
-    <label for="mensaje">Message:</label><br>
+    <label for="mensaje" id="label-mensaje">Message:</label><br>
     <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
 
-    <!-- Hidden fields for EmailJS -->
-    <input type="hidden" name="name" value="">
-    <input type="hidden" name="title" value="New message from website">
-
-    <button type="submit">Send</button>
+    <button type="submit" id="btn-enviar">Send</button>
   </form>
 
   <div style="margin-top:20px; text-align:center;">
     <a href="https://wa.me/5493518632045?text=Hello,%20I'd%20like%20to%20ask%20about%20immigration" 
-       target="_blank" class="btn-whatsapp">
+       target="_blank" class="btn-whatsapp" id="btn-whatsapp">
       <i class="fa-brands fa-whatsapp"></i> Contact us on WhatsApp
     </a>
   </div>
 </section>
+
+
+ 
 
 <footer>
   <div class="footer-container">
@@ -148,6 +145,8 @@
     nav.classList.toggle('show');
   });
 </script>
+<script src="js/traducciones.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

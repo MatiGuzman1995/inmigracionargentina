@@ -14,9 +14,7 @@
 <div class="top-bar">
   <div class="idioma-selector">
     <i class="fa-solid fa-globe"></i>
-    <button onclick="cambiarIdioma('es')" title="Español">
-      <img src="flag/españa.png" alt="Español">
-    </button>
+   
     <button onclick="cambiarIdioma('en')" title="English">
       <img src="flag/estadosunidos.png" alt="English">
     </button>
@@ -40,15 +38,16 @@
     <span></span><span></span><span></span>
   </div>
 <nav id="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="servicios.html" class="active">Services</a></li>
-        <li><a href="requisitos.html">Requirements</a></li>
-        <li><a href="nosotros.html">About Us</a></li>
-        <li><a href="preguntas.html">FAQ</a></li>
-        <li><a href="contacto.html">Contact</a></li>
-      </ul>
-    </nav>
+  <ul>
+    <li><a href="index.html" id="menu-home">Home</a></li>
+    <li><a href="servicios.html" id="menu-servicios" class="active">Services</a></li>
+    <li><a href="requisitos.html" id="menu-requisitos">Requirements</a></li>
+    <li><a href="nosotros.html" id="menu-nosotros">About Us</a></li>
+    <li><a href="preguntas.html" id="menu-preguntas">FAQ</a></li>
+    <li><a href="contacto.html" id="menu-contacto">Contact</a></li>
+  </ul>
+</nav>
+
 </header>
 
 <!-- HERO -->
@@ -130,6 +129,8 @@
     nav.classList.toggle('show');
   });
 </script>
+<script src="js/traducciones.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

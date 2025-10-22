@@ -52,7 +52,7 @@ const traducciones = {
       "serv1-titulo": "Residency",
       "serv1-texto": "We handle temporary or permanent residency applications with personalized support at every stage.",
       "serv2-titulo": "Legal Advice",
-      "serv2-texto": "Our immigration lawyers will guide you throughout the entire legal process in Argentina.",
+      "serv2-texto": "Our immigration team will guide you throughout the entire legal process in Argentina.",
       "serv3-titulo": "Documentation",
       "serv3-texto": "We take care of your paperwork: criminal records, apostilles, certificates, and official translations.",
       "btn-ver-todos": "See All Services",

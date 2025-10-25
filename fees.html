@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fees - Immigrate to Argentina</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="js/traducciones.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- BARRA SUPERIOR CON SELECTOR DE IDIOMA -->
+<div class="top-bar">
+  <div class="idioma-selector">
+    <i class="fa-solid fa-globe"></i>
+   
+    <button onclick="cambiarIdioma('en')" title="English">
+      <img src="flag/estadosunidos.png" alt="English">
+    </button>
+    <button onclick="cambiarIdioma('fr')" title="Français">
+      <img src="flag/francia.png" alt="Français">
+    </button>
+    <button onclick="cambiarIdioma('de')" title="Deutsch">
+      <img src="flag/alemania.png" alt="Deutsch">
+    </button>
+  </div>
+</div>
+
+ <header>
+  <div class="logo-container">
+    <img src="img/loguito.jpg" alt="Logo Inmigración Argentina" class="logo">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
+
+   <nav id="nav">
+  <ul>
+    <li><a href="index.html"  id="menu-home">Home</a></li>
+    <li><a href="servicios.html" id="menu-servicios">Services</a></li>
+    <li><a href="requisitos.html" id="menu-requisitos">Requirements</a></li>
+    <li><a href="nosotros.html" id="menu-nosotros">About Us</a></li>
+    <li><a href="fees.html" class="active" id="menu-fees">Fees</a></li>
+<li><a href="contacto.html" id="menu-contacto">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <section class="fees-section">
+      <h1 id="fees-title">Fees</h1>
+
+      <article>
+        <h2 id="fee1-title">ITA charges a total fee of $600 USD</h2>
+        <p id="fee1-desc">
+          The Argentina immigration (Residency) process is a ten-step procedure. This process requires
+          the applicant to appear at the immigration office at least 8 times over a 2-month period with
+          the proper documentation.
+        </p>
+
+        <h3 id="fee1-includes">The fee that ITA charges will provide you with the following services:</h3>
+        <ol id="fee1-list">
+          <li>A team member will accompany you, all 8 times over the two months, to the immigration office and assist you with the government forms every time you are required at the immigration office.</li>
+          <li>A team member will input all your residency/immigration documents, required by the Argentine government, and upload them to the immigration department’s website.</li>
+          <li>A team member will accompany you to the government agency that will provide you with a CDI card. You’ll need this card to purchase a vehicle, open a bank account, or buy real estate.</li>
+          <li>A team member will accompany you to the bank to assist you in opening an account.</li>
+          <li>A team member will be with you through every step to ensure you receive your residency.</li>
+        </ol>
+      </article>
+
+      <article>
+        <h2 id="fee2-title">Government immigration fees</h2>
+        <p id="fee2-desc">
+          Government immigration fees can vary depending on your type of residency and your country of origin.
+          It is advisable to budget approximately $250 USD for one person and $450 USD for a family of four.
+        </p>
+        <p id="fee2-final">
+          These are the total fees you will be required to pay in order to obtain temporary residency lasting two years,
+          at which time you will be eligible to apply for permanent residency.
+        </p>
+      </article>
+    </section>
+  </main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contact</h3>
+      <p><i class="fa-solid fa-envelope"></i> immigratetoargentina@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +54 9 351 863 2045</p>
+      <p><i class="fa-solid fa-location-dot"></i> Córdoba, Argentina</p>
+    </div>
+
+    <div class="footer-redes">
+      <h3>Follow Us</h3>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/profile.php?id=61582138615447&locale=es_LA/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/immigratetoargentina_/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5493518632045?text=Hello,%20I'd%20like%20to%20ask%20about%20immigration" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Immigrate To Argentina | <a href="avisos.html">Legal Notices</a></p>
+  </div>
+</footer>
+  <!-- RESPONSIVE MENU -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+<script src="js/traducciones.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

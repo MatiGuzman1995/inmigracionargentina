@@ -5,7 +5,7 @@ const traduccionesMenu = {
     "menu-servicios": "Services",
     "menu-requisitos": "Requirements",
     "menu-nosotros": "About Us",
-    "menu-preguntas": "FAQ",
+    "menu-fees": "Fees",
     "menu-contacto": "Contact"
   },
   fr: {
@@ -13,7 +13,7 @@ const traduccionesMenu = {
     "menu-servicios": "Services",
     "menu-requisitos": "Exigences",
     "menu-nosotros": "À propos",
-    "menu-preguntas": "FAQ",
+    "menu-fees": "Frais",
     "menu-contacto": "Contact"
   },
   de: {
@@ -21,7 +21,7 @@ const traduccionesMenu = {
     "menu-servicios": "Dienstleistungen",
     "menu-requisitos": "Anforderungen",
     "menu-nosotros": "Über uns",
-    "menu-preguntas": "FAQ",
+    "menu-fees": "Gebühren",
     "menu-contacto": "Kontakt"
   },
   es: {
@@ -152,14 +152,20 @@ avisos: {
   "modificaciones-titulo": "6. Modifications",
   "modificaciones-texto": "We reserve the right to update, modify, or delete any content, policy, or legal notice on this site without prior notice. We recommend reviewing this page periodically to stay informed about any changes.",
   "footer": "© 2025 Immigrate To Argentina | Legal Notices"
-}
-
-
-
-
-    
-  },
-
+},// --- FEES PAGE ---
+fees: {
+  "fees-title": "Fees",
+  "fee1-title": "ITA charges a total fee of $600 USD",
+  "fee1-desc":
+    "The Argentina immigration (Residency) process is a ten-step procedure. This process requires the applicant to appear at the immigration office at least 8 times over a 2-month period with the proper documentation.",
+  "fee1-includes":
+    "The fee that ITA charges will provide you with the following services:",
+  "fee2-title": "Government immigration fees",
+  "fee2-desc":
+    "Government immigration fees can vary depending on your type of residency and your country of origin. It is advisable to budget approximately $250 USD for one person and $450 USD for a family of four.",
+  "fee2-final":
+    "These are the total fees you will be required to pay in order to obtain temporary residency lasting two years, at which time you will be eligible to apply for permanent residency."
+}},
   fr: {
     // ------------------ INDEX ------------------
     index: {
@@ -175,7 +181,7 @@ avisos: {
       "serv1-titulo": "Résidence",
       "serv1-texto": "Nous gérons les demandes de résidence temporaire ou permanente avec un accompagnement personnalisé.",
       "serv2-titulo": "Conseil juridique",
-      "serv2-texto": "Nos avocats spécialisés en immigration vous guideront tout au long du processus juridique en Argentine.",
+      "serv2-texto": "Notre équipe d’immigration vous guidera tout au long du processus juridique en Argentine.",
       "serv3-titulo": "Documentation",
       "serv3-texto": "Nous nous occupons de vos documents : casier judiciaire, apostilles, certificats et traductions officielles.",
       "btn-ver-todos": "Voir tous les services",
@@ -275,8 +281,20 @@ avisos: {
   "modificaciones-titulo": "6. Modifications",
   "modificaciones-texto": "Nous nous réservons le droit de mettre à jour, modifier ou supprimer tout contenu, politique ou avis légal sur ce site sans préavis. Nous vous recommandons de consulter régulièrement cette page pour rester informé des changements éventuels.",
   "footer": "© 2025 Immigrate To Argentina | Mentions légales"
+},
+fees: {
+  "fees-title": "Frais",
+  "fee1-title": "ITA facture un total de 600 USD",
+  "fee1-desc":
+    "Le processus d'immigration (résidence) en Argentine comprend dix étapes. Ce processus exige que le demandeur se présente au bureau d'immigration au moins huit fois sur une période de deux mois avec la documentation appropriée.",
+  "fee1-includes":
+    "Les frais facturés par ITA comprennent les services suivants :",
+  "fee2-title": "Frais gouvernementaux d’immigration",
+  "fee2-desc":
+    "Les frais d'immigration gouvernementaux peuvent varier selon le type de résidence et le pays d'origine. Il est conseillé de prévoir environ 250 USD pour une personne et 450 USD pour une famille de quatre.",
+  "fee2-final":
+    "Ce sont les frais totaux à payer pour obtenir une résidence temporaire de deux ans, après quoi vous pourrez demander la résidence permanente."
 }
-
 
 
 
@@ -297,7 +315,7 @@ avisos: {
       "serv1-titulo": "Aufenthalt",
       "serv1-texto": "Wir bearbeiten Anträge auf befristete oder dauerhafte Aufenthaltserlaubnis mit individueller Unterstützung.",
       "serv2-titulo": "Rechtsberatung",
-      "serv2-texto": "Unsere Einwanderungsanwälte begleiten Sie während des gesamten rechtlichen Prozesses in Argentinien.",
+      "serv2-texto": "Unser Einwanderungsteam wird Sie während des gesamten rechtlichen Prozesses in Argentinien begleiten.",
       "serv3-titulo": "Dokumentation",
       "serv3-texto": "Wir kümmern uns um Ihre Unterlagen: Strafregister, Apostillen, Urkunden und beglaubigte Übersetzungen.",
       "btn-ver-todos": "Alle Dienstleistungen anzeigen",
@@ -397,8 +415,21 @@ avisos: {
   "modificaciones-titulo": "6. Änderungen",
   "modificaciones-texto": "Wir behalten uns das Recht vor, Inhalte, Richtlinien oder rechtliche Hinweise auf dieser Website jederzeit und ohne vorherige Ankündigung zu ändern oder zu löschen. Wir empfehlen, diese Seite regelmäßig zu überprüfen, um über eventuelle Änderungen informiert zu bleiben.",
   "footer": "© 2025 Immigrate To Argentina | Rechtliche Hinweise"
-}
-
+},
+ // ===== GERMAN =====
+  fees: {
+    "fees-title": "Gebühren",
+    "fee1-title": "ITA erhebt eine Gesamtgebühr von 600 USD",
+    "fee1-desc":
+      "Das Einwanderungsverfahren (Aufenthalt) in Argentinien umfasst zehn Schritte. Der Antragsteller muss sich mindestens achtmal innerhalb von zwei Monaten mit den entsprechenden Unterlagen beim Einwanderungsamt vorstellen.",
+    "fee1-includes":
+      "Die von ITA erhobene Gebühr umfasst die folgenden Dienstleistungen:",
+    "fee2-title": "Staatliche Einwanderungsgebühren",
+    "fee2-desc":
+      "Die staatlichen Einwanderungsgebühren können je nach Art der Aufenthaltserlaubnis und Herkunftsland variieren. Es wird empfohlen, etwa 250 USD für eine Person und 450 USD für eine vierköpfige Familie einzuplanen.",
+    "fee2-final":
+      "Dies sind die gesamten Gebühren, die Sie zahlen müssen, um eine zweijährige befristete Aufenthaltserlaubnis zu erhalten, nach der Sie einen Antrag auf eine permanente Aufenthaltserlaubnis stellen können."
+  }
 
 
 

@@ -1152,3 +1152,13 @@ nav ul li a.active {
     font-size: 1.1rem;
   }
 }
+header {
+  position: relative;
+  z-index: 1000; /* asegura que el menú esté por encima */
+}
+main,
+.container,
+.fees-section {
+  position: relative;
+  z-index: 1; /* asegura que el contenido quede por debajo */
+}
